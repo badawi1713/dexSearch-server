@@ -1,0 +1,24 @@
+{
+  "name": "dexsearch-server",
+  "version": "1.0.0",
+  "description": "Server or services for my perosnal dex-search application.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "data:import": "node config/database/databaseSeeder",
+    "data:destroy": "node config/database/databaseSeeder -d"
+  },
+  "author": "dzaky.badawi@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "mongoose": "^5.10.14",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.6"
+  }
+}
